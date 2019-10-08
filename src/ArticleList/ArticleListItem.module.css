@@ -1,0 +1,10 @@
+.title {
+    color: rgb(205, 2, 0);
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0px;
+}
+
+.time {
+    font-weight: bold;
+}

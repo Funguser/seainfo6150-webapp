@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ArticleListItem from './ArticleListItem';
+import style from './ArticleList.module.css';
 
 const ArticleList = (props) => {
     return (
-        <ul>
+        <ul className={style.list}>
             {props.articles.map((article) => (
-                <li key={article.slug}>
+                <li key={article.slug} className={style.article}>
                     <ArticleListItem article={article}></ArticleListItem>
                 </li>
             ))}
