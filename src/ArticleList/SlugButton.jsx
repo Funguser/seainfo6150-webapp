@@ -7,11 +7,13 @@ class SlugButton extends Component {
     };
     render() {
         return (
-            <button
-                onClick={this.displaySlugAlert}
-                className={style.slugButton}>
-                {this.props.buttonText}
-            </button>
+            <div>
+                <button
+                    onClick={this.displaySlugAlert}
+                    className={style.slugButton}>
+                    {this.props.buttonText}
+                </button>
+            </div>
         );
     }
 }
