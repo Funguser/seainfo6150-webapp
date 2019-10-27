@@ -11,6 +11,7 @@ class ArticleListItem extends Component {
                     url={this.props.article.image._url}
                     title={this.props.article.title}
                 />
+
                 <div className={style.content}>
                     <h3 className={style.title}>{this.props.article.title}</h3>
                     <p>{this.props.article.shortText}</p>
@@ -19,6 +20,8 @@ class ArticleListItem extends Component {
                         className={style.time}>
                         {this.props.article.pubDate}
                     </time>
+                </div>
+                <div className={style.button}>
                     <SlugButton
                         buttonText={this.props.article.author}
                         slug={this.props.article.slug}
