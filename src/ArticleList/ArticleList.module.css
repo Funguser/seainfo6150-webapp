@@ -1,6 +1,7 @@
 .list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     background-color: rgb(153, 153, 153);
     margin: 10px 10px 10px 10px;
     padding: 10px;
@@ -8,13 +9,53 @@
     border: 1px dashed black;
 }
 
-.article {
-    width: 30%;
-    background-color: white;
-    margin: 10px 10px 10px 10px;
-    border: 1px solid rgb(205, 2, 0);
-    border-radius: 10px;
-    padding: 10px;
-    list-style-type: none;
-    background: linear-gradient(to right, rgb(197, 76, 76), white 10%);
+@media screen and (min-width: 1800px) {
+    .article {
+        width: 20%;
+        background-color: white;
+        margin: 10px 10px 10px 10px;
+        border: 1px solid rgb(205, 2, 0);
+        border-radius: 10px;
+        padding: 10px;
+        list-style-type: none;
+        background: linear-gradient(to right, rgb(197, 76, 76), white 10%);
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .article {
+        width: 30%;
+        background-color: white;
+        margin: 10px 10px 10px 10px;
+        border: 1px solid rgb(205, 2, 0);
+        border-radius: 10px;
+        padding: 10px;
+        list-style-type: none;
+        background: linear-gradient(to right, rgb(197, 76, 76), white 10%);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .article {
+        width: 40%;
+        background-color: white;
+        margin: 10px 10px 10px 10px;
+        border: 1px solid rgb(205, 2, 0);
+        border-radius: 10px;
+        padding: 10px;
+        list-style-type: none;
+        background: linear-gradient(to right, rgb(197, 76, 76), white 10%);
+    }
+}
+@media screen and (max-width: 600px) {
+    .article {
+        width: 100%;
+        background-color: white;
+        margin: 10px 10px 10px 10px;
+        border: 1px solid rgb(205, 2, 0);
+        border-radius: 10px;
+        padding: 10px;
+        list-style-type: none;
+        background: linear-gradient(to right, rgb(197, 76, 76), white 10%);
+    }
 }
